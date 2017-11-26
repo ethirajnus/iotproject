@@ -1,0 +1,33 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Face Recognition</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="{% static 'css/facerecognition.css' %}">
+    </head>
+    <body>
+		<div class="container" style="margin-top: 80px;margin-left: auto ;margin-right: auto ;">
+  			<div class="card card-inverse card-danger" style="max-width: 50rem;">
+
+				<div class="card-block">
+				
+					<h1 class="card-title">Hi</h4>
+					<p class="card-text">{% if error_msg %}{{error_msg}}{% endif %}</p>
+					<h2>{% if name %}{{name}}{% endif %}</h2>
+				</div>
+				
+				{% load static %}<img src="{% static 'images/ot.jpg' %}" alt="no image" style="height: 30rem;">
+				<div class="card-block" style="align-self: center;">
+				
+					<a href="{% url 'index' %}" class="btn btn-primary">Back</a>
+				</div>
+			</div>
+		</div>
+
+
+
+
+
+    </body>
+</html>

@@ -1,0 +1,27 @@
+{% load staticfiles %}
+<html>
+    <head>
+        <title>Face Recognition</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="{% static 'css/facerecognition.css' %}">
+    </head>
+    <body>
+		<div class="container" style="margin-top: 80px;margin-left: auto ;margin-right: auto ;">
+  			<div class="card card-inverse card-danger" style="max-width: 50rem;">
+
+				<div class="card-block">
+					<h4 class="card-title">Hi </h4>
+					<p class="card-text">welcome to Face Detection-click on "okay" to proceed</p>
+					<img src="https://d13yacurqjgara.cloudfront.net/users/207059/screenshots/1686151/cameraicondribbble.gif" alt="no image" style="height: 30rem; width:100%; margin-left: auto ;margin-right: auto ;">
+				</div>
+				
+				<div class="card-block" style="align-self: center;">
+					
+					<a href="{% url 'greet' %}" class="btn btn-primary">okay</a>
+				</div>
+			</div>
+		</div>
+
+    </body>
+</html>
